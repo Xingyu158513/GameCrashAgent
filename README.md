@@ -2,9 +2,12 @@
 
 Privacy-first, read-only Windows game-crash evidence collection.
 
+[![tests](https://github.com/Xingyu158513/GameCrashAgent/actions/workflows/tests.yml/badge.svg)](https://github.com/Xingyu158513/GameCrashAgent/actions/workflows/tests.yml)
+[![release](https://img.shields.io/github/v/release/Xingyu158513/GameCrashAgent)](https://github.com/Xingyu158513/GameCrashAgent/releases/latest)
+
 GameCrashAgent gathers the first layer of evidence for blue screens, black screens, and unexpected reboots that occur around games or game launchers. It generates Markdown and JSON reports without modifying drivers, devices, registry keys, system settings, or user files.
 
-> 当前版本是从真实 Windows 游戏崩溃排查场景中整理出的开源候选版本。默认启用隐私脱敏，运行后仍应由用户检查报告，再决定是否分享。
+> 当前版本来自真实 Windows 游戏崩溃排查场景，现已作为开源版本发布。默认启用隐私脱敏，运行后仍应由用户检查报告，再决定是否分享。
 
 ## Why this project exists
 
@@ -50,6 +53,12 @@ Redaction reduces accidental disclosure but cannot guarantee that every identifi
 - Administrator permission is recommended, but not required
 
 The runtime uses only the Python standard library.
+
+## Download
+
+Download the verified Windows archive and its SHA-256 checksum from the [latest release](https://github.com/Xingyu158513/GameCrashAgent/releases/latest).
+
+The archive still requires Python 3.11 or newer; it is not a standalone executable.
 
 ## Quick start
 
@@ -115,8 +124,9 @@ scripts/          run and packaging helpers
 
 ## Roadmap
 
-- `v0.2`: privacy-first Markdown and JSON reports, tests, and Windows CI
-- `v0.3`: portable Windows release archive and broader hardware profiles
+- `v0.2`: privacy-first Markdown and JSON reports, tests, Windows CI, and a verified release archive
+- `v0.2.1`: fixes driven by the first external tester reports
+- `v0.3`: broader hardware profiles backed by public issue evidence
 - `v0.4`: optional import of a user-provided WinDbg text summary
 - `v0.5`: explicit-consent support-bundle export
 

@@ -2,17 +2,21 @@
 
 Do not submit this application until the repository is public and every placeholder below is replaced with accurate evidence.
 
+This file is public. Never add a personal email address, legal name, or OpenAI organization ID here. Enter those values only in the private OpenAI form.
+
 ## Required account information
 
-- ChatGPT account email: `[ADD BEFORE SUBMISSION]`
-- Public GitHub username: `[ADD BEFORE SUBMISSION]`
-- Public repository URL: `[ADD AFTER REPOSITORY CREATION]`
+- Surname: `[ENTER ONLY IN THE PRIVATE FORM]`
+- Given name: `[ENTER ONLY IN THE PRIVATE FORM]`
+- ChatGPT account email: `[ENTER ONLY IN THE PRIVATE FORM]`
+- Public GitHub username: `Xingyu158513`
+- Public repository URL: `https://github.com/Xingyu158513/GameCrashAgent`
 - Maintainer role: Primary maintainer
-- OpenAI organization ID: `[ADD BEFORE SUBMISSION]`
+- OpenAI organization ID: `[ENTER ONLY IN THE PRIVATE FORM]`
 
 ## Why this repository qualifies (500-character limit)
 
-GameCrashAgent 是面向 Windows 10/11 游戏蓝屏、黑屏与异常重启的只读诊断工具。它把 Minidump 元数据、系统事件、网络适配器和驱动版本整理为默认脱敏的 Markdown/JSON 报告，帮助用户、维护者和技术支持减少重复取证，并避免未经确认的系统修改。当前数据：GitHub Stars `[X]`、Release 下载 `[Y]`、外部测试用户 `[Z]`、已关闭 Issue `[N]`。
+GameCrashAgent 是面向 Windows 10/11 游戏蓝屏、黑屏与异常重启的只读诊断工具。它把 Minidump 元数据、系统事件、网络适配器和驱动版本整理为默认脱敏的 Markdown/JSON 报告，帮助用户、维护者和技术支持减少重复取证，并避免未经确认的系统修改。提交前如实补充：GitHub Stars `[X]`、Release 月下载量 `[Y]`、外部测试用户 `[Z]`、已关闭 Issue `[N]`。
 
 ## How API credits will be used (500-character limit)
 
@@ -24,15 +28,15 @@ API 额度将仅用于核心开源维护：对已脱敏诊断报告进行 Issue 
 
 ## Evidence checklist
 
-- [ ] Public repository and public maintainer profile
-- [ ] Correct open-source license
+- [x] Public repository and public maintainer profile
+- [x] Correct open-source license
 - [ ] At least two tagged releases
 - [ ] Release download count recorded
 - [ ] Stars, forks, and unique contributor count recorded
 - [ ] Real issues triaged and closed publicly
 - [ ] At least five external users or testers
-- [ ] Current README, privacy policy, security policy, and contribution guide
-- [ ] Passing Windows CI
+- [x] Current README, privacy policy, security policy, and contribution guide
+- [x] Passing Windows CI
 - [ ] No confidential information in the application
 - [ ] Every metric is accurate and can be verified
 
