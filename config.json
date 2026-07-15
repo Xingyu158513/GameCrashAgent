@@ -1,0 +1,35 @@
+{
+  "minidump_dir": "C:\\Windows\\Minidump",
+  "minidump_limit": 5,
+  "event_log_hours": 6,
+  "event_log_name": "System",
+  "event_providers": [
+    "BugCheck",
+    "Microsoft-Windows-WER-SystemErrorReporting",
+    "Microsoft-Windows-Kernel-Power",
+    "Microsoft-Windows-WHEA-Logger",
+    "Display",
+    "nvlddmkm",
+    "amdkmdag",
+    "Disk",
+    "storahci",
+    "BTHUSB"
+  ],
+  "network_keywords": [
+    "Realtek Wireless",
+    "Realtek 8821CE",
+    "WLAN",
+    "Wi-Fi",
+    "Microsoft Wi-Fi Direct Virtual Adapter"
+  ],
+  "driver_paths": [
+    "C:\\Windows\\System32\\drivers\\rtwlane.sys",
+    "C:\\Windows\\System32\\drivers\\vwififlt.sys",
+    "C:\\Windows\\System32\\drivers\\vwifibus.sys",
+    "C:\\Windows\\System32\\drivers\\wdiwifi.sys",
+    "C:\\Windows\\System32\\drivers\\ACE-BASE.sys",
+    "C:\\Windows\\System32\\drivers\\ACE-ADVT.sys",
+    "C:\\Windows\\System32\\drivers\\ACE-SSC-DRV64.sys",
+    "C:\\Windows\\System32\\drivers\\WeGameDriver764.sys"
+  ]
+}

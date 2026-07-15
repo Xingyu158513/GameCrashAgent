@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamecrashagent"
+version = "0.2.0"
+description = "Privacy-first, read-only Windows game-crash evidence collection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "GameCrashAgent contributors"}]
+keywords = ["windows", "diagnostics", "crash", "bsod", "gaming", "privacy"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Win32 (MS Windows)",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows :: Windows 10",
+  "Operating System :: Microsoft :: Windows :: Windows 11",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: System :: Systems Administration"
+]
+dependencies = []
+
+[project.scripts]
+gamecrashagent = "gamecrashagent.cli:main"
+
+[tool.setuptools]
+packages = ["gamecrashagent"]
