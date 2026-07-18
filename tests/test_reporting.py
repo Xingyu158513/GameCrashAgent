@@ -12,7 +12,7 @@ class ReportingTests(unittest.TestCase):
             "events": {
                 "log_name": "System",
                 "hours": 6,
-                "items": [{"Id": 41, "ProviderName": "Kernel-Power", "Message": "Alice 203.0.113.7"}],
+                "items": [{"Id": 41, "ProviderName": "Kernel-Power", "Message": "Alice 203.0.113.7 2001:db8::7"}],
                 "errors": [],
             },
             "network_adapters": {"items": [], "errors": []},
@@ -26,7 +26,9 @@ class ReportingTests(unittest.TestCase):
         self.assertIn("Initial Risk Assessment", markdown)
         self.assertNotIn("Alice", markdown)
         self.assertNotIn("203.0.113.7", markdown)
+        self.assertNotIn("2001:db8::7", markdown)
         self.assertNotIn("Alice", json_text)
+        self.assertNotIn("2001:db8::7", json_text)
 
 
 if __name__ == "__main__":

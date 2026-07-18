@@ -41,7 +41,7 @@ Standard redaction is enabled by default. It removes common:
 
 - Windows usernames and user-profile paths;
 - computer names;
-- IPv4 addresses;
+- IPv4 and IPv6 addresses;
 - MAC addresses.
 
 Redaction reduces accidental disclosure but cannot guarantee that every identifier inside arbitrary event-log text is removed. Always review a report before publishing it. See [PRIVACY.md](PRIVACY.md).

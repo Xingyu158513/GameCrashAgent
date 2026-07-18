@@ -9,6 +9,13 @@ All notable changes will be documented here.
 - Portable Windows release archive.
 - Additional diagnostic profiles based on validated public issues.
 
+## [0.2.1] - 2026-07-18
+
+### Fixed
+
+- Redact valid IPv6 addresses, including compressed, scoped, and IPv4-mapped forms, before reports are shared.
+- Preserve non-address text containing colons, such as event timestamps and Windows paths.
+
 ## [0.2.0] - 2026-07-15
 
 ### Added

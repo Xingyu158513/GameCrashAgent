@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gamecrashagent"
-version = "0.2.0"
+version = "0.2.1"
 description = "Privacy-first, read-only Windows game-crash evidence collection"
 readme = "README.md"
 requires-python = ">=3.11"

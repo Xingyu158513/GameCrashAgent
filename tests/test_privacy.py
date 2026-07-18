@@ -29,6 +29,22 @@ class PrivacyTests(unittest.TestCase):
         self.assertNotIn("Alice", result["events"]["items"][0]["Message"])
         self.assertTrue(result["privacy"]["redacted"])
 
+    def test_redacts_common_ipv6_forms(self) -> None:
+        source = (
+            "global 2001:db8::1, link-local [fe80::abcd%12]:443, "
+            "mapped ::ffff:192.0.2.128."
+        )
+        result = self.redactor.text(source)
+        self.assertNotIn("2001:db8::1", result)
+        self.assertNotIn("fe80::abcd%12", result)
+        self.assertNotIn("::ffff:192.0.2.128", result)
+        self.assertEqual(result.count("[REDACTED-IP]"), 3)
+        self.assertIn("[REDACTED-IP].", result)
+
+    def test_does_not_redact_non_ip_colon_text(self) -> None:
+        source = "Event time 12:34:56, ratio 1:2:3, and path C:\\Windows\\System32"
+        self.assertEqual(self.redactor.text(source), source)
+
 
 if __name__ == "__main__":
     unittest.main()
