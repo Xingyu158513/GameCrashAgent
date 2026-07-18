@@ -13,7 +13,7 @@ Minidump contents are not opened or parsed.
 
 ## Standard redaction
 
-Standard redaction is enabled by default and replaces common usernames, computer names, Windows user-profile paths, IPv4 addresses, and MAC addresses. Redaction is best effort because arbitrary event providers may embed identifiers in unexpected formats.
+Standard redaction is enabled by default and replaces common usernames, computer names, Windows user-profile paths, IPv4 and IPv6 addresses, and MAC addresses. Redaction is best effort because arbitrary event providers may embed identifiers in unexpected formats.
 
 Before attaching a report to a public issue:
 
